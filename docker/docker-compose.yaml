@@ -10,4 +10,4 @@ services:
        APP_USER_PASSWD: webdav
        DIGEST_AUTH_REALM: WebDav
     volumes:
-      - ./volume/files:/var/webdav/data
+      - ./volume/files:/var/webdav
