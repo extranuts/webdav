@@ -1,0 +1,13 @@
+version: '2.2'
+services:
+  webdav:
+    container_name: webdav
+    image: "chonjay21/webdav:latest"
+    ports:
+      - 85:80
+    environment:
+       APP_USER_NAME: webdav
+       APP_USER_PASSWD: webdav
+       DIGEST_AUTH_REALM: WebDav
+    volumes:
+      - ./volume/files:/var/webdav/data
